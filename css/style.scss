@@ -1,0 +1,54 @@
+$cd-bgd:whitesmoke;
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+h1{
+    font-family: "Shrikhand" cursive;
+}
+
+h2{
+    font-family: "Shrikhand" cursive;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+
+.head{
+    text-align: center;
+    font-family: "Shrikhand" cursive;
+    font-size: 20px;
+}
+
+.explore{
+    background-color: $cd-bgd;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.location .icon{
+    padding: 15px 15px 15px 0;
+}
+
+.light{
+    font-weight: lighter;
+}
+
+.button_explore{
+    color: #ffffff;
+    background: linear-gradient(to top left, #9356DC,#ff79da);
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    margin: 20px ;
+    transition: opacity 1s;
+}
