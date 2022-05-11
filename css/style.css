@@ -94,6 +94,7 @@ h2 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  cursor: pointer;
 }
 
 .function_list {
