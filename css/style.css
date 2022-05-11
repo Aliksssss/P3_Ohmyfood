@@ -13,49 +13,49 @@ h2 {
   font-family: "Shrikhand" cursive;
 }
 
-h3 {
-  font-size: 1.5rem;
-}
-
 .head {
   text-align: center;
   font-family: "Shrikhand" cursive;
   font-size: 18px;
 }
 
+/* Location*/
 .explore {
   background-color: whitesmoke;
   padding-bottom: 20px;
   text-align: center;
 }
 
-.location {
+.explore .location {
   background-color: #f0f0f0;
   font-weight: 600;
 }
 
-.location .icon {
+.explore .location .icon {
   padding: 20px 15px 15px 0;
 }
 
-.explore-title {
+.explore_title {
   padding: 0 30px;
 }
 
-.explore-subtitle {
+.explore_subtitle {
   padding: 0 20px;
-}
-
-.light {
   font-weight: lighter;
 }
 
-.button_explore {
+.explore_light {
+  font-weight: lighter;
+}
+
+.explore__button {
   color: #ffffff;
-  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#ff79da));
-  background: linear-gradient(to top left, #9356DC, #ff79da);
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(to top left, #9356dc, #ff79da);
   text-align: center;
-  padding: 10px;
+  padding: 0.7rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
   border: none;
   border-radius: 40px;
   cursor: pointer;
@@ -64,29 +64,75 @@ h3 {
   margin: 20px;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
 }
 
 /* Fonctionnement*/
 .function {
   background-color: #ffffff;
+  display: block;
 }
 
-.function-title {
+.function .contain {
+  margin: auto;
+  position: relative;
+}
+
+.function_title {
   font-size: 30px;
+  margin: 0;
+  padding: 1.5rem;
 }
 
-/*counter-reset voir avec Audrey*/
-.function-list {
+.function_list {
+  list-style-type: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.function_list {
   list-style-type: none;
   counter-reset: listeCompte;
 }
 
-.function-item::before {
+.function_item::before {
   counter-increment: listeCompte;
   content: counter(listeCompte) "";
+  background: #9356dc;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  position: absolute;
+  left: -2rem;
 }
 
-/*.function-item{
-    counter-reset: listeCompte;
-}*/
+.function_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 1.5rem;
+  margin: 1rem 0 1rem 0.5rem;
+  -webkit-box-shadow: 0px 5px 10px gainsboro;
+          box-shadow: 0px 5px 10px gainsboro;
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
+  width: 500px;
+}
 /*# sourceMappingURL=style.css.map */

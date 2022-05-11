@@ -1,91 +1,124 @@
-$cd-bgd:whitesmoke;
+$cd-bgd: whitesmoke;
 $cd-txt: black;
 
-body{
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
 }
 
-h1{
-    font-family: "Shrikhand" cursive;
+h1 {
+  font-family: "Shrikhand" cursive;
 }
 
-h2{
-    font-family: "Shrikhand" cursive;
+h2 {
+  font-family: "Shrikhand" cursive;
 }
 
-h3{
-    font-size: 1.5rem;
+.head {
+  text-align: center;
+  font-family: "Shrikhand" cursive;
+  font-size: 18px;
 }
 
+/* Location*/
 
-.head{
-    text-align: center;
-    font-family: "Shrikhand" cursive;
-    font-size: 18px;
-}
+.explore {
+  background-color: $cd-bgd;
+  padding-bottom: 20px;
+  text-align: center;
 
-.explore{
-    background-color: $cd-bgd;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-.location{
+  .location {
     background-color: #f0f0f0;
     font-weight: 600;
-}
-.location .icon{
+  }
+  .location .icon {
     padding: 20px 15px 15px 0;
-    
-}
-.explore-title{
+  }
+  &_title {
     padding: 0 30px;
-}
-.explore-subtitle{
+  }
+  &_subtitle {
     padding: 0 20px;
-}
-
-.light{
     font-weight: lighter;
-}
+  }
 
-.button_explore{
+  &_light {
+    font-weight: lighter;
+  }
+
+  &__button {
     color: #ffffff;
-    background: linear-gradient(to top left, #9356DC,#ff79da);
+    background: linear-gradient(to top left, #9356dc, #ff79da);
     text-align: center;
-    padding: 10px;
+    padding: 0.7rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
     border: none;
     border-radius: 40px;
     cursor: pointer;
     width: 250px;
     height: 50px;
-    margin: 20px ;
+    margin: 20px;
     transition: opacity 1s;
+    transition-duration: 0.25s;
+  }
 }
 
 /* Fonctionnement*/
 
 .function{
-    background-color: #ffffff;
-}
-.function-title{
+  background-color: #ffffff;
+  display: block;
+
+  .contain {
+    margin: auto;
+    position: relative;
+  }
+
+  &_title {
     font-size: 30px;
-}
+    margin: 0;
+    padding: 1.5rem;
+  }
 
-/*counter-reset voir avec Audrey*/
+  &_list {
+    list-style-type:none;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    
+  }
 
-.function-list{
+  &_list{
     list-style-type: none;
     counter-reset: listeCompte;
 }
 
-.function-item::before{
+&_item::before{
     counter-increment: listeCompte;
     content: counter(listeCompte)"";
+    background: #9356dc;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: absolute;
+    left: -2rem;
 }
-/*.function-item{
-    counter-reset: listeCompte;
-}*/
+
+  &_item {
+    display: flex;
+    position: relative;
+    padding: 1.5rem;
+    margin: 1rem 0 1rem 0.5rem;
+    box-shadow: 0px 5px 10px gainsboro;
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    width: 500px;
+  }
+}
