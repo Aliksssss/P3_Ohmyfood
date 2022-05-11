@@ -20,7 +20,7 @@ h3 {
 .head {
   text-align: center;
   font-family: "Shrikhand" cursive;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .explore {
@@ -29,8 +29,21 @@ h3 {
   text-align: center;
 }
 
+.location {
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+
 .location .icon {
-  padding: 15px 15px 15px 0;
+  padding: 20px 15px 15px 0;
+}
+
+.explore-title {
+  padding: 0 30px;
+}
+
+.explore-subtitle {
+  padding: 0 20px;
 }
 
 .light {
@@ -52,4 +65,28 @@ h3 {
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
+
+/* Fonctionnement*/
+.function {
+  background-color: #ffffff;
+}
+
+.function-title {
+  font-size: 30px;
+}
+
+/*counter-reset voir avec Audrey*/
+.function-list {
+  list-style-type: none;
+  counter-reset: listeCompte;
+}
+
+.function-item::before {
+  counter-increment: listeCompte;
+  content: counter(listeCompte) "";
+}
+
+/*.function-item{
+    counter-reset: listeCompte;
+}*/
 /*# sourceMappingURL=style.css.map */
