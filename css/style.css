@@ -5,14 +5,6 @@ body {
   font-size: 20px;
 }
 
-h1 {
-  font-family: "Shrikhand" cursive;
-}
-
-h2 {
-  font-family: "Shrikhand" cursive;
-}
-
 .head {
   text-align: center;
   font-family: "Shrikhand" cursive;
@@ -29,6 +21,8 @@ h2 {
 .explore .location {
   background-color: #f0f0f0;
   font-weight: 600;
+  -webkit-box-shadow: inset 0px 10px 13px 1px rgba(0, 0, 0, 0.53);
+  box-shadow: inset 0px 10px 8px -7px rgba(0, 0, 0, 0.53);
 }
 
 .explore .location .icon {
@@ -92,14 +86,20 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   cursor: pointer;
-}
-
-.function_list {
   list-style-type: none;
   counter-reset: listeCompte;
+}
+
+@media (min-width: 768px) {
+  .function_list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .function_item::before {
@@ -120,7 +120,7 @@ h2 {
           align-items: center;
   color: #ffffff;
   position: absolute;
-  left: -2rem;
+  left: -1rem;
 }
 
 .function_item {
@@ -129,11 +129,15 @@ h2 {
   display: flex;
   position: relative;
   padding: 1.5rem;
-  margin: 1rem 0 1rem 0.5rem;
+  margin: 1rem 1rem 1rem 0.5rem;
   -webkit-box-shadow: 0px 5px 10px gainsboro;
           box-shadow: 0px 5px 10px gainsboro;
   border-radius: 1.25rem;
   background-color: #f6f6f6;
-  width: 500px;
+  width: 100%;
+  /* width calc ou box sizing */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
