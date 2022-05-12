@@ -7,8 +7,20 @@ body {
 
 .head {
   text-align: center;
-  font-family: "Shrikhand" cursive;
   font-size: 18px;
+}
+
+.head_title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-family: "Shrikhand", cursive;
+  margin: 1rem 0;
 }
 
 /* Location*/
@@ -16,6 +28,12 @@ body {
   background-color: whitesmoke;
   padding-bottom: 20px;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .explore .location {
@@ -23,10 +41,32 @@ body {
   font-weight: 600;
   -webkit-box-shadow: inset 0px 10px 13px 1px rgba(0, 0, 0, 0.53);
   box-shadow: inset 0px 10px 8px -7px rgba(0, 0, 0, 0.53);
+  padding: 1rem 1rem 2rem 2rem;
 }
 
-.explore .location .icon {
-  padding: 20px 15px 15px 0;
+.explore .location input {
+  border: none;
+  font-size: 20px;
+  background: #f0f0f0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  height: 1.5rem;
+  width: 180px;
+  color: black;
+}
+
+.explore_icon {
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1rem 0 0;
+  color: black;
 }
 
 .explore_title {
@@ -36,6 +76,7 @@ body {
 .explore_subtitle {
   padding: 0 20px;
   font-weight: lighter;
+  padding-bottom: 10px;
 }
 
 .explore_light {
@@ -49,7 +90,7 @@ body {
   text-align: center;
   padding: 0.7rem 1.5rem;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border: none;
   border-radius: 40px;
   cursor: pointer;
