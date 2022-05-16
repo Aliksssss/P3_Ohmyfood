@@ -48,14 +48,14 @@ body {
     font-weight: bold;
     height: 1.5rem;
     width: 180px;
-    color: black;
+    color: $cd-txt;
   }
  
   &_icon{
     width: 80px;
     display: flex;
     padding: 0 1rem 0 0 ;
-    color: black;
+    color: &$cd-txt;
   }
 
   
@@ -117,10 +117,14 @@ body {
     counter-reset: listeCompte;
 
       @media (min-width:768px){
-      
+        flex-wrap: nowrap;
         justify-content: center;
       }
   }
+
+&_item .icons{
+  margin-right: 10px;
+}
 
 &_item::before{
     counter-increment: listeCompte;
@@ -148,10 +152,9 @@ body {
     width: 100%; /* width calc ou box sizing */
     align-items: center;
 
-    @media (min-width:768px){
-      
+    @media screen and (min-width:768px){
+      flex-wrap: nowrap;
     }
   }
-
 
 }

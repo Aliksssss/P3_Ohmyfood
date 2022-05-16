@@ -66,7 +66,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 0 1rem 0 0;
-  color: black;
+  color: .explore_icon black;
 }
 
 .explore_title {
@@ -137,10 +137,16 @@ body {
 
 @media (min-width: 768px) {
   .function_list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.function_item .icons {
+  margin-right: 10px;
 }
 
 .function_item::before {
@@ -180,5 +186,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .function_item {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 /*# sourceMappingURL=style.css.map */
