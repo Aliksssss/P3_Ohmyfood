@@ -222,8 +222,8 @@ body {
   position: relative;
   display: block;
   margin: 0.5rem 0;
-  -webkit-box-shadow: .25rem .25rem .5rem black;
-          box-shadow: .25rem .25rem .5rem black;
+  -webkit-box-shadow: .25rem .25rem .5rem gray;
+          box-shadow: .25rem .25rem .5rem gray;
 }
 
 .restaurant .cards .card__img {
@@ -273,5 +273,51 @@ body {
 
 .restaurant .cards .card__title__name__location {
   margin: 0;
+}
+
+/* Footer*/
+.foot {
+  background-color: #353535;
+  color: white;
+  text-decoration: none;
+}
+
+.foot_contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  color: white;
+}
+
+.foot_logo {
+  color: #ffffff;
+  font-family: Shrikhand , "cursive";
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.footer_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.footer_list_shorlist {
+  margin: 0.5rem 0;
+}
+
+.footer_list__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer_list__icon {
+  width: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

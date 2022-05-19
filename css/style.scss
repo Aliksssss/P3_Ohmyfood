@@ -1,6 +1,7 @@
 $cd-bgd: whitesmoke;
 $cd-txt: black;
 
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -181,7 +182,7 @@ body {
     position: relative;
     display: block;
     margin:0.5rem 0;
-    box-shadow: .25rem .25rem .5rem black;
+    box-shadow: .25rem .25rem .5rem gray;
 
     &__img{
       width: 100%;
@@ -224,5 +225,50 @@ body {
     }
   }
   }
+
+  /* Footer*/
+
+  .foot{
+    background-color: #353535;
+    color: white;
+    text-decoration: none;
+
+    &_contain{
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      color: white; 
+    }
+
+    &_logo{
+      color: #ffffff;
+      font-family: Shrikhand , "cursive";
+      font-size: 1.5rem;
+      margin: 0 0 1rem;
+    }
+  }
+
+.footer_list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+
+  &_shorlist{
+    
+    margin: 0.5rem 0;
+  }
+
+  &__link{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  &__icon{
+    width: 2rem;
+  
+  }
+
+}
 
 
