@@ -102,13 +102,13 @@ body {
     position: relative;
   }
 
-  &__contain_title {
+  &_contain_title {
     font-size: 30px;
     margin: 0;
     padding: 1.5rem;
   }
 
-  &__contain_list {
+  &_contain_list {
     list-style-type:none;
     flex-wrap: wrap;
     display: flex;
@@ -125,11 +125,11 @@ body {
       }
   }
 
-&_item .icons{
+&_contain_item .icons{
   margin-right: 1rem;
 }
 
-&_item::before{
+&_contain_item::before{
     counter-increment: listeCompte;
     content: counter(listeCompte)"";
     background: #9356dc;
@@ -145,7 +145,7 @@ body {
     
 }
 
-  &_item {
+  &_contain_item {
     display: flex;
     position: relative;
     padding: 1.5rem;
