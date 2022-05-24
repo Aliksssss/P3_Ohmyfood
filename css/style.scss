@@ -172,15 +172,20 @@ body {
   .container{
     margin: auto;
     position: relative; 
+
+    @media (min-width:768px){
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      display: flex;
+    }
   }
 
   .cards{
     display: flex;
     flex-direction: column;
 
-    @media (min-width:768px){
-      
-    }
+    
 
   .card{
     background: #ffffff;
