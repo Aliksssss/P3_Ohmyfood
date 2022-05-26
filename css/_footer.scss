@@ -1,0 +1,43 @@
+.footer{
+    background-color: #353535;
+    display: block;
+
+    &__contain{
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    &__contain__logo{
+      color:#ffffff;
+      font-family: Shrikhand,"cursive";
+      font-size: 1.5rem;
+      margin: 0 0 1rem 1rem;
+    }
+
+    &__list{
+      list-style: none;
+      padding: 0;
+      margin: 1rem;
+
+      &__shortlist{
+        margin-top: 0;
+        padding: 0 0 12px 0;
+        
+
+        .footer-link{
+          color: #ffffff;
+          text-decoration: none;
+          
+
+          &__icons{
+            width: 1.2rem;
+            margin-right: 2rem;
+          }
+          
+        }
+      }
+    }
+  }
+
+

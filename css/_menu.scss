@@ -1,0 +1,46 @@
+
+.items{
+  
+    &_contain{
+      height: 80px;
+      width: 100%;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 1rem;
+  
+      &_name{
+        width: 70%;
+        padding: 0px 4rem;
+        transform-origin: left;
+      }
+  
+      &_price{
+        width: 10%;
+        padding: 0px 4rem;
+        text-align: center;
+      }
+  
+      &_logo{
+        height: 80px;
+        width: 10%;
+        padding: 0px 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0px;
+        transform: scale(1);
+        transform-origin: right;
+        color: #fff;
+        background-color: aqua;
+        border-radius: 0 1rem 1rem 0;
+        font-size: 1rem;
+        /* voir audrey*/
+      }
+  
+    }
+  }
+  
