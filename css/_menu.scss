@@ -38,13 +38,14 @@
         border-radius: 0 1rem 1rem 0;
         font-size: 2em;
        
-        transition-duration: 1sec;
+       
         cursor: pointer;
         
         &:hover{
           transform: scaleX(1);
-          transform-origin: left;
+          transform-origin: right;
           transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+          transition-duration: 1sec;
 
         }
       }
