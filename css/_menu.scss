@@ -10,6 +10,7 @@
       align-items: center;
       background-color: #fff;
       border-radius: 1rem;
+      cursor: pointer;
   
       &_name{
         width: 70%;
@@ -32,14 +33,24 @@
         justify-content: center;
         position: absolute;
         right: 0px;
-        transform: scale(1);
-        transform-origin: right;
         color: #fff;
         background-color: aqua;
         border-radius: 0 1rem 1rem 0;
-        font-size: 1rem;
-        /* voir audrey*/
+        font-size: 2em;
+       
+        transition-duration: 1sec;
+        cursor: pointer;
+        
+        &:hover{
+          transform: scaleX(1);
+          transform-origin: left;
+          transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        }
       }
+      
+      
+      
   
     }
   }

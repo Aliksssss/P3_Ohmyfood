@@ -364,6 +364,7 @@
           align-items: center;
   background-color: #fff;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 .items_contain_name {
@@ -394,15 +395,24 @@
           justify-content: center;
   position: absolute;
   right: 0px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transform-origin: right;
-          transform-origin: right;
   color: #fff;
   background-color: aqua;
   border-radius: 0 1rem 1rem 0;
-  font-size: 1rem;
-  /* voir audrey*/
+  font-size: 2em;
+  -webkit-transition-duration: 1sec;
+          transition-duration: 1sec;
+  cursor: pointer;
+}
+
+.items_contain_logo:hover {
+  -webkit-transform: scaleX(1.15);
+          transform: scaleX(1.15);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 1000ms ease-in;
+  transition: -webkit-transform 1000ms ease-in;
+  transition: transform 1000ms ease-in;
+  transition: transform 1000ms ease-in, -webkit-transform 1000ms ease-in;
 }
 
 body {
