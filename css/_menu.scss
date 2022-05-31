@@ -19,7 +19,7 @@
       }
   
       &_price{
-        width: 10%;
+        width: 100px;
         padding: 0px 4rem;
         text-align: center;
       }
@@ -37,15 +37,14 @@
         background-color: aqua;
         border-radius: 0 1rem 1rem 0;
         font-size: 2em;
-       
+        flex-basis: 0;
        
         cursor: pointer;
         
         &:hover{
-          transform: scaleX(1);
+          transform: translateX(200px);
           transform-origin: right;
-          transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-          transition-duration: 1sec;
+          transition-duration: all 700ms;
 
         }
       }

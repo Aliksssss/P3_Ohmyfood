@@ -375,7 +375,7 @@
 }
 
 .items_contain_price {
-  width: 10%;
+  width: 100px;
   padding: 0px 4rem;
   text-align: center;
 }
@@ -399,20 +399,18 @@
   background-color: aqua;
   border-radius: 0 1rem 1rem 0;
   font-size: 2em;
-  -webkit-transition-duration: 1sec;
-          transition-duration: 1sec;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
   cursor: pointer;
 }
 
 .items_contain_logo:hover {
-  -webkit-transform: scaleX(1.15);
-          transform: scaleX(1.15);
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-transition: -webkit-transform 1000ms ease-in;
-  transition: -webkit-transform 1000ms ease-in;
-  transition: transform 1000ms ease-in;
-  transition: transform 1000ms ease-in, -webkit-transform 1000ms ease-in;
+  -webkit-transition-duration: all 700ms;
+          transition-duration: all 700ms;
 }
 
 body {
