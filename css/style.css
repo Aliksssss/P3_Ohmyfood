@@ -348,13 +348,79 @@
   margin-right: 2rem;
 }
 
-.entry__title {
-  border-bottom: 3px solid aqua;
+.restaurantm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  position: relative;
 }
 
-.items {
-  height: 100%;
-  width: 100%;
+.restaurantm .menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 5%;
+  padding-bottom: 75px;
+  margin-top: -2.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 2.5rem 2.5rem 0 0;
+  z-index: 1;
+}
+
+.restaurantm .menus_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2.5rem;
+}
+
+.restaurantm .menus_title_rest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 1rem;
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+}
+
+.restaurantm .menus_title_rest__heart {
+  height: 2rem;
+  width: 2rem;
+  border: 0 solid transparent;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.restaurantm .menu_list {
+  margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,96 +430,11 @@
           flex-direction: column;
 }
 
-.items_contain {
-  height: 80px;
-  width: 100%;
-  margin-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fff;
-  border-radius: 1rem;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.items_contain_name {
-  width: 70%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.items_contain_desc {
-  font-weight: normal;
-}
-
-.items_contain_price {
-  width: 100px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  text-overflow: ellipsis;
-  margin: 1rem 0 0 0.5rem;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.items_contain__logo {
-  width: 0;
-  overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  background-color: aqua;
-  border-radius: 0 1rem 1rem 0;
-  font-size: 2em;
-  padding-top: 25px;
-  cursor: pointer;
-  -webkit-transition: width 1s;
-  transition: width 1s;
-}
-
-.items_contain__logo .logo_check {
-  display: inline-block;
-  margin: auto;
-  color: #fff;
-  width: 0;
-  background-color: aqua;
-  font-size: 2rem;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
-}
-
-.items_contain__logo .logo_check .items_contain_name:hover .items_contain_logo {
-  width: 70px;
-}
-
-.items_contain__logo .logo_check .items_contain_name:hover .items_contain_logo > .logo_check {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+.restaurantm .menu_list .entry {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
 }
 
 body {

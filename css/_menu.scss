@@ -1,81 +1,64 @@
-.entry__title{
-  border-bottom: 3px solid aqua;
-}
-.items{
-    height: 100%;
-    width: 100%;
+.restaurantm{
+  display: flex;
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0 ;
+  background-color: #f6f6f6;
+  position: relative;
+
+
+.menus{
     display: flex;
+    padding: 1rem 5%;
+    padding-bottom: 75px;
+    margin-top: -2.5rem;
     flex-direction: column;
+    border-radius: 2.5rem 2.5rem 0 0 ;
+    z-index: 1;
 
-  
-    &_contain{
-      height: 80px;
-      width: 100%;
-      margin-top: 1rem;
+    &_title{
       display: flex;
-      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-      background-color: #fff;
-      border-radius: 1rem;
-      cursor: pointer;
-      overflow: hidden;
-     
+      padding-right: 2.5rem;
 
-    
-      &_name{
-        width: 70%;
-        align-items:center;
+      &_rest{
         display: flex;
-        transform-origin: left;
-        flex-grow: 1;
-      }
-
-      &_desc{
-        font-weight: normal;
-      }
-  
-      &_price{
-        width: 100px;
-        flex-grow: 1;
-        text-overflow: ellipsis;
-        margin: 1rem 0 0 0.5rem;
-        animation-fill-mode: forwards;
-        animation-delay: 1s;
-   
-      }
-  
-      &__logo{
-        width:0;
-        overflow: hidden;
+        justify-content: space-between;
         align-items: center;
-        color: #fff;
-        background-color: aqua;
-        border-radius: 0 1rem 1rem 0;
-        font-size: 2em;
-        padding-top: 25px;
-        cursor: pointer;
-        transition: width 1s;
+        padding-right: 1rem;
+        font-family: "Shrikhand", cursive;
+        font-weight: normal;
         
-      .logo_check{
-        display: inline-block;
-        margin: auto;
-        color: #fff;
-        width: 0;
-        background-color: aqua;
-        font-size: 2rem;
-        transform: rotate(360deg);
-        transition: transform 500ms;
 
-        .items_contain_name:hover .items_contain_logo {
-          width: 70px;
-        }
-        .items_contain_name:hover .items_contain_logo >.logo_check{
-          transform: rotate(0deg);
-        }
+        &__heart{
+         height: 2rem;
+         width: 2rem;
+         border: 0 solid transparent;
+         padding: 0;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         cursor: pointer;
+         position: relative;
+          }
       }
-    
-    }
-    
     }
   }
+
+  .menu_list{
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    
+       
+    .entry{
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 0.5rem;
+      font-weight: 400;
+   
   
+    }
+  }
+
+}
