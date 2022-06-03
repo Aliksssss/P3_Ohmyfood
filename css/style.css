@@ -355,7 +355,7 @@
   position: relative;
   background: white;
   border-radius: 2rem 2rem 0 0;
-  padding: 1rem 2rem 0 1rem;
+  padding: 1rem 2rem 0 2rem;
 }
 
 .main_page_head {
@@ -380,7 +380,7 @@
 .main_page_heart {
   font-size: 2rem;
   border: 0 solid transparent;
-  padding: 0;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,6 +393,31 @@
   cursor: pointer;
   position: relative;
   background: transparent;
+}
+
+.main_page_heart:hover .full_heart {
+  display: block;
+}
+
+.main_page_heart .empty_heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.main_page_heart .full_heart {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  /* verifier transition*/
 }
 
 .main_page .menu_cards {
@@ -455,11 +480,19 @@
   position: relative;
   -webkit-box-shadow: black 0.25rem 0.25rem 1rem;
           box-shadow: black 0.25rem 0.25rem 1rem;
-  padding: 1.5rem;
   margin: 1rem 0;
   border-radius: 1rem;
   background-color: white;
   cursor: pointer;
+}
+
+.main_page .menu_cards_meal:hover .menu_cards_check {
+  width: 100px;
+}
+
+.main_page .menu_cards_meal:hover .icon_meal {
+  -webkit-animation: rotation 300ms ease-in;
+          animation: rotation 300ms ease-in;
 }
 
 .main_page .menu_cards_text {
@@ -467,6 +500,10 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 1rem;
+}
+
+.main_page .menu_cards_text .menu_subtitle {
+  margin: 1rem 0 -1.3rem 0;
 }
 
 .main_page .menu_cards_price {
@@ -480,8 +517,66 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 100%;
+  padding: 1rem;
 }
 
+.main_page .menu_cards_check {
+  width: 0;
+  background: aqua;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0 1rem 1rem 0;
+  -webkit-transition: width 300ms;
+  transition: width 300ms;
+  overflow: hidden;
+}
+
+.main_page .menu_cards .icon_meal {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+/* coeur sur index html */
+/* mise en page */
+/* LOADER*/
 body {
   font-family: "Roboto", cursive;
   margin: 0;

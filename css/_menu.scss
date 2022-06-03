@@ -5,10 +5,8 @@
   position: relative;
   background: white;
   border-radius: 2rem 2rem 0 0;
-  padding: 1rem 2rem 0 1rem;
+  padding: 1rem 2rem 0 2rem;
   
- 
-
   &_head{
     padding:1rem 2rem 0 1rem ;
     display: flex;
@@ -26,19 +24,46 @@
   &_heart{
     font-size: 2rem;
     border: 0 solid transparent;
-    padding: 0;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     position: relative;
-   background: transparent;
+    background: transparent;
+    
+    &:hover{
+      .full_heart{
+        display: block;
+      }
+    }
+
+    .empty_heart{
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 500ms;
+
+    }
+    .full_heart{
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 500ms;
+
+      /* verifier transition*/
+    
+    }
   }
 
   .menu_cards{
     display: flex;
     flex-direction: column;
-   
+
 
     &_entry{
       max-width: 100%;
@@ -51,6 +76,7 @@
       padding-bottom: 1rem;
       font-weight: 400;
       margin: 1rem 0;
+      
 
       &::after{
         content: "";
@@ -76,17 +102,29 @@
       flex-direction: row;
       align-items: center;
       position: relative;
-      box-shadow: black 0.25rem 0.25rem 1rem ;
-      padding: 1.5rem;
+      box-shadow: black 0.25rem 0.25rem 1rem;
       margin: 1rem 0;
       border-radius: 1rem;
       background-color: white;
       cursor: pointer;
-
+      
+      &:hover{
+        .menu_cards_check{
+          width: 100px;
+        }
+        .icon_meal{
+          animation: rotation 300ms ease-in;
+        }
+      }
     }
+
     &_text{
       flex-grow: 1  ;
       margin: 1rem;
+      .menu_subtitle{
+        margin: 1rem 0 -1.3rem 0;
+      }
+      
     }
 
     &_price{
@@ -94,14 +132,46 @@
       font-weight:600;
       justify-content: flex-end;
       align-items: flex-end;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 100%;
+      padding: 1rem;
+    }
+    &_check{
+      width: 0;
+      background: aqua;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      border-radius:0 1rem 1rem 0 ;
+      transition: width 300ms;
+      overflow: hidden;
+    }
+
+    .icon_meal{
+      transform: rotate(0deg);
     }
 
     
   }
 
-
-
-  
-
-
 }
+
+
+
+@keyframes rotation {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+  
+}
+
+
+ /* coeur sur index html */
+ /* mise en page */
+ /* LOADER*/
