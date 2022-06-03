@@ -149,13 +149,44 @@
       transition: width 300ms;
       overflow: hidden;
     }
-
     .icon_meal{
       transform: rotate(0deg);
+    }    
+  }
+
+  .menus_button{
+    text-align: center;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin: 2rem;
+
+    .explore__button{
+      color: white;
+      background: linear-gradient(to top left, #9356dc, #ff79da);
+      text-align: center;
+      padding: 0.7rem 1.5rem;
+      font-weight: 500;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      width: 250px;
+      height: 50px;
+      margin: 20px;
+   
     }
 
-    
+
   }
+  
+
+
+
+
+
+  
 
 }
 
