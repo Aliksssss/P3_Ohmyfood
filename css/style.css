@@ -71,7 +71,7 @@
   display: -ms-flexbox;
   display: flex;
   padding: 0 1rem 0 0;
-  color:  black;
+  color: .explore_icon black;
 }
 
 .explore_title {
