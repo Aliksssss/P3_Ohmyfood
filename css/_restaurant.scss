@@ -31,6 +31,7 @@
       display: block;
       margin:0.5rem 0;
       box-shadow: .25rem .25rem .5rem gray;
+      cursor: pointer;
   
       &__img{
         width: 100%;
@@ -61,10 +62,12 @@
         &__txt{
           justify-content: left;
           margin: 0;
+          
         }
   
         &__name{
           margin:0;
+          
           
   
         &__location{

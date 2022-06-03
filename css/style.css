@@ -252,6 +252,7 @@
   margin: 0.5rem 0;
   -webkit-box-shadow: .25rem .25rem .5rem gray;
           box-shadow: .25rem .25rem .5rem gray;
+  cursor: pointer;
 }
 
 .restaurant .cards .card__img {
@@ -562,7 +563,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 1rem;
-  margin: 2rem;
+  margin: 4rem;
 }
 
 .main_page .menus_button .explore__button {
@@ -570,7 +571,7 @@
   background: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
   background: linear-gradient(to top left, #9356dc, #ff79da);
   text-align: center;
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem 2.5rem;
   font-weight: 500;
   font-size: 1.5rem;
   border: none;
@@ -578,7 +579,7 @@
   cursor: pointer;
   width: 250px;
   height: 50px;
-  margin: 20px;
+  margin: 2rem;
 }
 
 @-webkit-keyframes rotation {
