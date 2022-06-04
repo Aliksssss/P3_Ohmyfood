@@ -269,6 +269,11 @@
   cursor: pointer;
 }
 
+.restaurant .cards .card:hover {
+  -webkit-box-shadow: 0 0 10px #ED74DA;
+          box-shadow: 0 0 10px #ED74DA;
+}
+
 .restaurant .cards .card__img {
   width: 100%;
   height: 220px;
@@ -498,6 +503,11 @@
   border-radius: 1rem;
   background-color: white;
   cursor: pointer;
+}
+
+.main_page .menu_cards_meal:hover {
+  -webkit-box-shadow: 0 0 10px #ED74DA;
+          box-shadow: 0 0 10px #ED74DA;
 }
 
 .main_page .menu_cards_meal:hover .menu_cards_check {

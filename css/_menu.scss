@@ -91,6 +91,7 @@
   .menu_cards{
     display: flex;
     flex-direction: column;
+   
     
 
     &_meal{
@@ -107,8 +108,12 @@
       cursor: pointer;
       
       &:hover{
-        .menu_cards_check{
+          box-shadow: 0 0 10px #ED74DA;
+
+
+       .menu_cards_check{
           width: 100px;
+          
         }
         .icon_meal{
           animation: rotation 300ms ease-in;

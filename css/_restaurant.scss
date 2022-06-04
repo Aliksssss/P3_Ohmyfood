@@ -18,6 +18,8 @@
     .cards{
       display: flex;
       flex-direction: column;
+
+      
   
       @media (min-width:768px){
         width: 30rem;
@@ -32,6 +34,9 @@
       margin:0.5rem 0;
       box-shadow: .25rem .25rem .5rem gray;
       cursor: pointer;
+      &:hover {
+        box-shadow: 0 0 10px #ED74DA;
+      }
   
       &__img{
         width: 100%;
