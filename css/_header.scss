@@ -88,6 +88,14 @@
       margin: 20px;
       transition: opacity 1s;
       transition-duration: 0.25s;
+      box-shadow: 0 5px 10px 0 rgba( 0, 0, 0, 0.3);
+      transition: opacity 1s;
+        &:hover {
+          
+            opacity: 0.5;
+            box-shadow: 0 5px 10px 0 rgba( 0, 0, 0, 0.4);
+        
+        }
     }
   }
   
@@ -118,7 +126,7 @@
       padding: 0;
       list-style-type: none;
       counter-reset: listeCompte;
-  
+        
         @media (min-width:768px){
           flex-wrap: nowrap;
           justify-content: center;
@@ -155,6 +163,10 @@
       background-color: #f6f6f6;
       width: 100%; /* width calc ou box sizing */
       align-items: center;
+      &:hover {
+        background-color: rgba(147, 86, 220, .1);
+        cursor: pointer;
+      }
   
       @media screen and (min-width:768px){
         flex-wrap: nowrap;

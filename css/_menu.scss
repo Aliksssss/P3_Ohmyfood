@@ -159,6 +159,7 @@
     align-items: center;
     padding-bottom: 1rem;
     margin: 4rem;
+   
 
     .explore__button{
       color: white;
@@ -172,20 +173,24 @@
       cursor: pointer;
       width: 250px;
       height: 50px;
-      margin: 2rem;
-   
+      margin: 2rem;    
+      box-shadow: 0 5px 10px 0 rgba( 0, 0, 0, 0.3);
+      transition: opacity 1s;
+        &:hover {
+          
+            opacity: 0.5;
+            box-shadow: 0 5px 10px 0 rgba( 0, 0, 0, 0.4);
+        
+        }
+
+    
+    
+    
     }
 
 
   }
   
-
-
-
-
-
-  
-
 }
 
 
@@ -200,7 +205,3 @@
   
 }
 
-
- /* coeur sur index html */
- /* mise en page */
- /* LOADER*/

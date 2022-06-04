@@ -106,6 +106,15 @@
   transition: opacity 1s;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: opacity 1s;
+}
+
+.explore__button:hover {
+  opacity: 0.5;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 /* Fonctionnement*/
@@ -193,6 +202,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.function_contain_item:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -579,6 +593,16 @@
   width: 250px;
   height: 50px;
   margin: 2rem;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.main_page .menus_button .explore__button:hover {
+  opacity: 0.5;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 @-webkit-keyframes rotation {
@@ -603,9 +627,6 @@
   }
 }
 
-/* coeur sur index html */
-/* mise en page */
-/* LOADER*/
 body {
   font-family: "Roboto", cursive;
   margin: 0;
