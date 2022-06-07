@@ -1,6 +1,6 @@
 .restaurant{
     background-color: #f6f6f6;
-    padding: 4rem 1.5rem;
+    padding: 0.5rem 1rem;
   
     .container{
       margin: auto;
@@ -18,11 +18,11 @@
     .cards{
       display: flex;
       flex-direction: column;
+      padding: 1rem;
 
-      
-  
       @media (min-width:768px){
         width: 30rem;
+        padding: 0;
   
             }
     
@@ -34,9 +34,7 @@
       margin:0.5rem 0;
       box-shadow: .25rem .25rem .5rem gray;
       cursor: pointer;
-      &:hover {
-        box-shadow: 0 0 10px #ED74DA;
-      }
+     
   
       &__img{
         width: 100%;
@@ -47,7 +45,7 @@
       }
   
       &__badge{
-        background: greenyellow;
+        background: #99E2D0;
         color: green;
         padding: .25rem;
         border-radius: 0.2rem;
@@ -59,9 +57,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0.2rem;
         color: black;
-        padding: 0.5rem;
+        padding: 0 1rem 1rem 1rem ;
+       
         
   
         &__txt{
@@ -71,9 +69,8 @@
         }
   
         &__name{
-          margin:0;
-          
-          
+          margin-top:0;
+          padding: auto;
   
         &__location{
           margin: 0;

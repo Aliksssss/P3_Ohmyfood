@@ -31,10 +31,12 @@
     cursor: pointer;
     position: relative;
     background: transparent;
+    transition-duration: 0.25s;
     
     &:hover{
       .full_heart{
         display: block;
+        
       }
     }
 
@@ -79,8 +81,8 @@
       &::after{
         content: "";
         width: 3rem;
-        height: 0.5rem;
-        background-color: aqua;
+        height: 5px;
+        background-color: #99E2D0;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -106,9 +108,10 @@
       border-radius: 1rem;
       background-color: white;
       cursor: pointer;
-      
-      &:hover{
-          box-shadow: 0 0 10px #ED74DA;
+      transition-duration: 0.25s;
+   
+            
+      &:hover{ 
 
 
        .menu_cards_check{
@@ -124,6 +127,11 @@
     &_text{
       flex-grow: 1  ;
       margin: 1rem;
+      text-overflow: ellipsis;
+      content:"...";
+      overflow: hidden;
+
+
       .menu_subtitle{
         margin: 1rem 0 -1.3rem 0;
       }
@@ -143,7 +151,7 @@
     }
     &_check{
       width: 0;
-      background: aqua;
+      background: #99E2D0;
       height: 100%;
       align-items: center;
       justify-content: center;
@@ -154,6 +162,15 @@
     }
     .icon_meal{
       transform: rotate(0deg);
+      background: white;
+      border-radius: 100px;
+      display: flex;
+      justify-content:center;
+      width:1.7rem;
+      height:1.7rem;
+      align-items: center;
+      color: #99E2D0;
+      
     }    
   }
 

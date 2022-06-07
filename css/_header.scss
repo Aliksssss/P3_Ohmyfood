@@ -1,6 +1,7 @@
 .head {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.1rem;
+    padding: 1rem 0 1rem 0 ;
   }
   
   .head_title {
@@ -75,7 +76,7 @@
   
     &__button {
       color: #ffffff;
-      background: linear-gradient(to top left, #9356dc, #ff79da);
+      background: linear-gradient(0deg, #9356dc, #ff79da);
       text-align: center;
       padding: 0.7rem 1.5rem;
       font-weight: 500;
@@ -88,12 +89,12 @@
       margin: 20px;
       transition: opacity 1s;
       transition-duration: 0.25s;
-      box-shadow: 0 5px 10px 0 rgba( 0, 0, 0, 0.3);
+      box-shadow: 0.25rem 0.25rem 10px rgba( 0, 0, 0, .25);
       transition: opacity 1s;
+      transition-duration: 0.25s;
         &:hover {
-          
             opacity: 0.5;
-            box-shadow: 0 5px 10px 0 rgba( 0, 0, 0, 0.4);
+            box-shadow: 0 5px 10px 0 rgba( 0, 0, 0, 0.25);
         
         }
     }
@@ -104,6 +105,7 @@
   .function{
     background-color: #ffffff;
     display: block;
+    margin-bottom: 2rem;
   
     &_contain {
       margin: auto;
@@ -163,9 +165,10 @@
       background-color: #f6f6f6;
       width: 100%; /* width calc ou box sizing */
       align-items: center;
+      cursor: pointer;
       &:hover {
-        background-color: rgba(147, 86, 220, .1);
-        cursor: pointer;
+        background-color: rgba(255,121,218,1);
+        opacity: 0.5;
       }
   
       @media screen and (min-width:768px){

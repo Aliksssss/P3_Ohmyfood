@@ -15,31 +15,38 @@ body {
   .head_main {
     display: flex;
     justify-content: center;
+    align-items: center;
     box-shadow: 0 5px 5px lightgrey;
     margin-bottom: 5px;
     width: 100%;
     height: 100%;
     font-family: "Shrikhand", cursive;
+    font-size: 18px;
   
     &_link {
       position: absolute;
       left: 20px;
-      top: 35px;
+      top: 2rem;
       color: black;
       font-size: 2.2rem;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      
     }
   
     &__arrow {
       display: flex;
       justify-content: left;
+      align-items: center;
       width: 80px;
       color: black;
-      font-size: 1.2rem;
+     
   
-      &__logo {
+      &_main_logo {
         text-align: center;
         justify-content: center;
-        height: 20px;
+   
       }
     }
   }
