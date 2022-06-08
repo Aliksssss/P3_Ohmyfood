@@ -143,6 +143,7 @@
       counter-increment: listeCompte;
       content: counter(listeCompte)"";
       background: #9356dc;
+      opacity: 1;
       height: 2rem;
       width: 2rem;
       border-radius: 150px;
@@ -168,7 +169,7 @@
       cursor: pointer;
       &:hover {
         background-color: rgba(255,121,218,1);
-        opacity: 0.5;
+        opacity: 0.4;
       }
   
       @media screen and (min-width:768px){

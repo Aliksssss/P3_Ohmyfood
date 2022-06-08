@@ -1,0 +1,39 @@
+.loading{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1200;
+    background-color: rgba(0,0,0,0.5);
+    color: #9356dc;
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    font-size: 5rem;
+
+    &_icon{
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        animation-name: beating;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-duration: 1.5s;
+    }
+    &_text{
+        font-size: 5rem;
+        opacity: 1;
+        font-size: 1rem;
+        animation-name: points;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-duration: 1.5s;
+    }
+}
