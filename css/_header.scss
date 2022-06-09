@@ -93,9 +93,12 @@
     transition: opacity 1s;
     transition-duration: 0.25s;
     &:hover {
-      opacity: 0.5;
-      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+      background-color: lighten($color-primary, 35%);
+      box-shadow: 10px 5px 5px $color-secondary;
+      
     }
+
+  
   }
 }
 
@@ -105,6 +108,7 @@
   background-color: #ffffff;
   display: block;
   margin-bottom: 2rem;
+
 
   &_contain {
     margin: auto;
@@ -137,6 +141,7 @@
   &_contain_item .icons {
     margin-right: 1rem;
     color: #888;
+    font-size: 1.5rem;
   }
   
   &_contain_item::before{
@@ -168,6 +173,7 @@
       width: 100%; /* width calc ou box sizing */
       align-items: center;
       cursor: pointer;
+      font-weight: 500;
       &:hover {
         background-color: lighten($color-primary, 35%);
         

@@ -9,9 +9,7 @@
       @media (min-width:768px){
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
         display: flex;
-  
       }
     }
   
@@ -19,12 +17,19 @@
       display: flex;
       flex-direction: column;
       padding: 1rem;
+      width: calc(100% - 2rem);
+   
 
       @media (min-width:768px){
-        width: 30rem;
-        padding: 0;
-  
-            }
+        width: calc(50% - 2rem);
+        height: 350px;
+        
+     }
+
+     @media (min-width:1100px){
+      width: calc(25% - 2rem);
+      
+   }
     
     .card{
       background: #ffffff;

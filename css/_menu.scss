@@ -90,6 +90,7 @@
       padding-bottom: 1rem;
       font-weight: 400;
       margin: 1rem 0;
+      font-size: 1.3rem;
       
 
       &::after{
@@ -105,14 +106,13 @@
   }
 
 .main_cards_menus{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   width: 100%;
 
-  
   @media (min-width:768px) {
    flex-wrap: wrap;
+   display: flex;
+  flex-direction: row;
+
     
   }
 
@@ -125,6 +125,11 @@
 
     @media (min-width:768px) {
       width: 50%;
+      
+    }
+
+    @media (min-width:992px) {
+      flex: 1;
       
     }
    

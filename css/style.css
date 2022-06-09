@@ -114,9 +114,9 @@
 }
 
 .explore__button:hover {
-  opacity: 0.5;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f2eafb;
+  -webkit-box-shadow: 10px 5px 5px #FF79DA;
+          box-shadow: 10px 5px 5px #FF79DA;
 }
 
 /* Fonctionnement*/
@@ -167,6 +167,7 @@
 .function_contain_item .icons {
   margin-right: 1rem;
   color: #888;
+  font-size: 1.5rem;
 }
 
 .function_contain_item::before {
@@ -208,6 +209,7 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .function_contain_item:hover {
@@ -243,8 +245,6 @@
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -260,12 +260,19 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1rem;
+  width: calc(100% - 2rem);
 }
 
 @media (min-width: 768px) {
   .restaurant .cards {
-    width: 30rem;
-    padding: 0;
+    width: calc(50% - 2rem);
+    height: 350px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .restaurant .cards {
+    width: calc(25% - 2rem);
   }
 }
 
@@ -486,6 +493,7 @@
   padding-bottom: 1rem;
   font-weight: 400;
   margin: 1rem 0;
+  font-size: 1.3rem;
 }
 
 .main_page .menu_cards_title::after {
@@ -499,15 +507,6 @@
 }
 
 .main_page .main_cards_menus {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   width: 100%;
 }
 
@@ -515,6 +514,13 @@
   .main_page .main_cards_menus {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -528,6 +534,14 @@
 @media (min-width: 768px) {
   .main_page .menu_cards {
     width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .main_page .menu_cards {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 
