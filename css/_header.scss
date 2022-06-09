@@ -136,6 +136,7 @@
 
   &_contain_item .icons {
     margin-right: 1rem;
+    color: #888;
   }
   
   &_contain_item::before{
@@ -152,6 +153,7 @@
       color: #ffffff;
       position: absolute;
       left: -1rem;
+
       
   }
   
@@ -167,8 +169,13 @@
       align-items: center;
       cursor: pointer;
       &:hover {
-        background-color: rgba(255,121,218,1);
-        opacity: 0.4;
+        background-color: lighten($color-primary, 35%);
+        
+      }
+
+      &:hover .icons{
+          color: $color-primary;
+        
       }
   
       @media screen and (min-width:768px){

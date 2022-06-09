@@ -166,6 +166,7 @@
 
 .function_contain_item .icons {
   margin-right: 1rem;
+  color: #888;
 }
 
 .function_contain_item::before {
@@ -210,8 +211,11 @@
 }
 
 .function_contain_item:hover {
-  background-color: #ff79da;
-  opacity: 0.4;
+  background-color: #f2eafb;
+}
+
+.function_contain_item:hover .icons {
+  color: #9356DC;
 }
 
 @media screen and (min-width: 768px) {
@@ -494,14 +498,37 @@
   bottom: 0;
 }
 
+.main_page .main_cards_menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main_page .main_cards_menus {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .main_page .menu_cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main_page .menu_cards {
+    width: 50%;
+  }
 }
 
 .main_page .menu_cards_meal {

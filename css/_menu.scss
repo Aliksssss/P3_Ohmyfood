@@ -104,12 +104,29 @@
     }
   }
 
+.main_cards_menus{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
 
+  
+  @media (min-width:768px) {
+   flex-wrap: wrap;
+    
+  }
+
+}
   
 
   .menu_cards{
     display: flex;
-    flex-direction: column;
+    width: 100%;
+
+    @media (min-width:768px) {
+      width: 50%;
+      
+    }
    
     
 
