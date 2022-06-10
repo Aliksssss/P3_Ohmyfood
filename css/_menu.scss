@@ -148,6 +148,9 @@
       background-color: white;
       cursor: pointer;
       transition-duration: 0.25s;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      content: '...';
    
             
       &:hover{
@@ -165,9 +168,7 @@
     &_text{
       flex-grow: 1  ;
       margin: 1rem;
-      text-overflow: ellipsis;
-      content:"...";
-      overflow: hidden;
+      
 
 
       .menu_subtitle{

@@ -301,7 +301,7 @@
   background: #99E2D0;
   color: green;
   padding: .25rem;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -567,6 +567,9 @@
   cursor: pointer;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  content: '...';
 }
 
 .main_page .menu_cards_meal:hover .menu_cards_check {
@@ -583,9 +586,6 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 1rem;
-  text-overflow: ellipsis;
-  content: "...";
-  overflow: hidden;
 }
 
 .main_page .menu_cards_text .menu_subtitle {
