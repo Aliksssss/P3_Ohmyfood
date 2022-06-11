@@ -547,7 +547,7 @@
 
 .main_page .menu_cards_meal {
   max-width: 100%;
-  height: 80px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,8 +667,8 @@
 
 .main_page .menus_button .explore__button {
   color: white;
-  background: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
-  background: linear-gradient(to top left, #9356dc, #ff79da);
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc, #ff79da);
   text-align: center;
   padding: 0.7rem 2.5rem;
   font-weight: 500;
@@ -679,16 +679,18 @@
   width: 250px;
   height: 50px;
   margin: 2rem;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
 }
 
 .main_page .menus_button .explore__button:hover {
-  opacity: 0.5;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f2eafb;
+  -webkit-box-shadow: 10px 5px 5px #FF79DA;
+          box-shadow: 10px 5px 5px #FF79DA;
 }
 
 body {

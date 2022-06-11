@@ -224,7 +224,7 @@
 
     .explore__button{
       color: white;
-      background: linear-gradient(to top left, #9356dc, #ff79da);
+      background: linear-gradient(0deg, #9356dc, #ff79da);
       text-align: center;
       padding: 0.7rem 2.5rem;
       font-weight: 500;
@@ -235,14 +235,14 @@
       width: 250px;
       height: 50px;
       margin: 2rem;    
-      box-shadow: 0 5px 10px 0 rgba( 0, 0, 0, 0.3);
-      transition: opacity 1s;
-        &:hover {
-          
-            opacity: 0.5;
-            box-shadow: 0 5px 10px 0 rgba( 0, 0, 0, 0.4);
+      box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+    transition: opacity 1s;
+    transition-duration: 0.25s;
+      &:hover {
+        background-color: lighten($color-primary, 35%);
+        box-shadow: 10px 5px 5px $color-secondary;
         
-        }
+      }  
         
     
     }
