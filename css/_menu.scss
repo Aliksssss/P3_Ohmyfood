@@ -133,12 +133,12 @@
       
     }
    
-    
-
     &_meal{
       max-width: 100%;
       height: 100px;
       display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
       flex-direction: row;
       align-items: center;
       position: relative;
@@ -148,10 +148,6 @@
       background-color: white;
       cursor: pointer;
       transition-duration: 0.25s;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      content: '...';
-   
             
       &:hover{
 
@@ -166,13 +162,15 @@
     }
 
     &_text{
-      flex-grow: 1  ;
+      flex-grow: 1;
       margin: 1rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
       
-
-
+      
       .menu_subtitle{
         margin: 1rem 0 -1.3rem 0;
+       
       }
       
     }
@@ -234,7 +232,7 @@
       cursor: pointer;
       width: 250px;
       height: 50px;
-      margin: 2rem;    
+      margin: -5rem;    
       box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
     transition: opacity 1s;
     transition-duration: 0.25s;
