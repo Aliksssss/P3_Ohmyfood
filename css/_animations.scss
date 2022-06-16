@@ -53,3 +53,20 @@
           opacity: 1;
       }
   }
+
+  @keyframes cascade{
+
+    0%{
+        opacity: 0;
+        transition: translateY(100px);
+
+    }
+    100%{
+        opacity: 1;
+        transition: translateY(0px);
+
+
+    }
+  }
+  
+  /* voir transition */

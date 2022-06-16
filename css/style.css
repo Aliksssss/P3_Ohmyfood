@@ -89,34 +89,33 @@
   font-weight: lighter;
 }
 
-.explore__button {
-  color: #ffffff;
+.btn {
+  color: white;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
   background: linear-gradient(0deg, #9356dc, #ff79da);
   text-align: center;
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem 2.5rem;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   border: none;
   border-radius: 40px;
   cursor: pointer;
   width: 250px;
   height: 50px;
-  margin: 20px;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  margin: -5rem;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transition: all;
+  transition: all;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
-  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  transition: opacity 1s;
-  transition-duration: 0.25s;
+  opacity: 1;
 }
 
-.explore__button:hover {
-  background-color: #f2eafb;
-  -webkit-box-shadow: 10px 5px 5px #FF79DA;
-          box-shadow: 10px 5px 5px #FF79DA;
+.btn:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0.7;
 }
 
 /* Fonctionnement*/
@@ -436,8 +435,8 @@
   cursor: pointer;
   position: relative;
   background: transparent;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media screen and (min-width: 768px) {
@@ -529,11 +528,14 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-transition: translateY(100px);
+  transition: translateY(100px);
 }
 
 @media (min-width: 768px) {
   .main_page .menu_cards {
     width: 50%;
+    max-width: 50%;
   }
 }
 
@@ -542,12 +544,13 @@
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    max-width: 33%;
   }
 }
 
 .main_page .menu_cards_meal {
   max-width: 100%;
-  height: 100px;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,11 +590,19 @@
           flex-grow: 1;
   margin: 1rem;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .main_page .menu_cards_text .menu_subtitle {
   margin: 1rem 0 -1.3rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.main_page .menu_cards_text .menu_description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .main_page .menu_cards_price {
@@ -667,32 +678,23 @@
   margin: 4rem;
 }
 
-.main_page .menus_button .explore__button {
-  color: white;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
-  background: linear-gradient(0deg, #9356dc, #ff79da);
-  text-align: center;
-  padding: 0.7rem 2.5rem;
-  font-weight: 500;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 40px;
-  cursor: pointer;
-  width: 250px;
-  height: 50px;
-  margin: -5rem;
-  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
+.anim1 {
+  -webkit-animation: cascade 400ms ease-in-out;
+          animation: cascade 400ms ease-in-out;
 }
 
-.main_page .menus_button .explore__button:hover {
-  background-color: #f2eafb;
-  -webkit-box-shadow: 10px 5px 5px #FF79DA;
-          box-shadow: 10px 5px 5px #FF79DA;
+.anim2 {
+  -webkit-animation: cascade 400ms ease-in-out;
+          animation: cascade 400ms ease-in-out;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.anim3 {
+  -webkit-animation: cascade 400ms ease-in-out;
+          animation: cascade 400ms ease-in-out;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 
 body {
@@ -1013,6 +1015,33 @@ body {
   }
 }
 
+@-webkit-keyframes cascade {
+  0% {
+    opacity: 0;
+    -webkit-transition: translateY(100px);
+    transition: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transition: translateY(0px);
+    transition: translateY(0px);
+  }
+}
+
+@keyframes cascade {
+  0% {
+    opacity: 0;
+    -webkit-transition: translateY(100px);
+    transition: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transition: translateY(0px);
+    transition: translateY(0px);
+  }
+}
+
+/* voir transition */
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
