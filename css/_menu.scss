@@ -38,7 +38,7 @@
     cursor: pointer;
     position: relative;
     background: transparent;
-    transition:all 0.3s;
+    transition:all 1s ease-in-out;
 
 
     @media screen and(min-width:768px) {
@@ -69,7 +69,7 @@
       background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      transition: all 500ms;
+      transition: all 1s ease-in-out;
     
     }
   }
@@ -228,20 +228,6 @@
     align-items: center;
     padding-bottom: 1rem;
     margin: 4rem;
-   
-   
-
   }  
 }
 
-.anim1{
-  animation: cascade 400ms ease-in-out;
-}
-.anim2{
-  animation: cascade 400ms ease-in-out;
-  animation-delay: 500ms;
-}
-.anim3{
-  animation: cascade 400ms ease-in-out;
-  animation-delay: 1000ms;
-}

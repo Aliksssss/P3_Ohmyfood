@@ -435,8 +435,8 @@
   cursor: pointer;
   position: relative;
   background: transparent;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -466,8 +466,8 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .main_page .menu_cards {
@@ -678,25 +678,6 @@
   margin: 4rem;
 }
 
-.anim1 {
-  -webkit-animation: cascade 400ms ease-in-out;
-          animation: cascade 400ms ease-in-out;
-}
-
-.anim2 {
-  -webkit-animation: cascade 400ms ease-in-out;
-          animation: cascade 400ms ease-in-out;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
-}
-
-.anim3 {
-  -webkit-animation: cascade 400ms ease-in-out;
-          animation: cascade 400ms ease-in-out;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-}
-
 body {
   font-family: "Roboto", cursive;
   margin: 0;
@@ -832,7 +813,6 @@ body {
   position: relative;
   cursor: pointer;
   color: black;
-  /* voir audrey couleur icone*/
 }
 
 .loading {
@@ -1039,6 +1019,25 @@ body {
     -webkit-transition: translateY(0px);
     transition: translateY(0px);
   }
+}
+
+.anim1 {
+  -webkit-animation: cascade 200ms ease-in-out;
+          animation: cascade 200ms ease-in-out;
+}
+
+.anim2 {
+  -webkit-animation: cascade 400ms ease-in-out;
+          animation: cascade 400ms ease-in-out;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.anim3 {
+  -webkit-animation: cascade 600ms ease-in-out;
+          animation: cascade 600ms ease-in-out;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 
 /* voir transition */

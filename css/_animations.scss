@@ -69,4 +69,15 @@
     }
   }
   
+  .anim1{
+    animation: cascade 200ms ease-in-out;
+  }
+  .anim2{
+    animation: cascade 400ms ease-in-out;
+    animation-delay: 500ms;
+  }
+  .anim3{
+    animation: cascade 600ms ease-in-out;
+    animation-delay: 1000ms;
+  }
   /* voir transition */
