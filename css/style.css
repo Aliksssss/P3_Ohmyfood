@@ -446,20 +446,19 @@
   }
 }
 
-.main_page_heart:hover .full_heart {
-  display: block;
+.main_page_heart:hover .heart2 {
+  opacity: 1;
 }
 
-.main_page_heart .empty_heart {
+.main_page_heart .heart1 {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
 }
 
-.main_page_heart .full_heart {
-  display: none;
+.main_page_heart .heart2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -468,6 +467,7 @@
   -webkit-text-fill-color: transparent;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  opacity: 0;
 }
 
 .main_page .menu_cards {

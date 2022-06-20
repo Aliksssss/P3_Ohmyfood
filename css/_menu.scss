@@ -48,21 +48,22 @@
    }
     
     &:hover{
-      .full_heart{
-        display: block;
+      .heart2{
+        opacity: 1;
         
       }
     }
 
-    .empty_heart{
+    .heart1 {
       position: absolute;
       top: 0;
       left: 0;
-      transition: all 500ms;
+      transition: all 350ms;
 
     }
-    .full_heart{
-      display: none;
+
+    .heart2 {
+     
       position: absolute;
       top: 0;
       left: 0;
@@ -70,10 +71,10 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: all 1s ease-in-out;
-    
+      opacity: 0;
     }
-  }
 
+  }
   .menu_cards{
     display: flex;
     flex-direction: column;
@@ -228,6 +229,7 @@
     align-items: center;
     padding-bottom: 1rem;
     margin: 4rem;
-  }  
-}
+  } 
+} 
+
 
