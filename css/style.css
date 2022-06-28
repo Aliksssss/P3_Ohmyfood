@@ -72,7 +72,7 @@
   display: -ms-flexbox;
   display: flex;
   padding: 0 1rem 0 0;
-  color: .explore_icon black;
+  color:black;
 }
 
 .explore_title {
@@ -1040,7 +1040,7 @@ body {
           animation-delay: 1000ms;
 }
 
-/* voir transition */
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;

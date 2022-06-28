@@ -40,7 +40,6 @@
     background: transparent;
     transition:all 1s ease-in-out;
 
-
     @media screen and(min-width:768px) {
      
       padding: 1rem;
@@ -59,11 +58,9 @@
       top: 0;
       left: 0;
       transition: all 350ms;
-
     }
 
-    .heart2 {
-     
+    .heart2 { 
       position: absolute;
       top: 0;
       left: 0;
@@ -117,7 +114,6 @@
   }
 
 }
-  
 
   .menu_cards{
     display: flex;
