@@ -75,6 +75,8 @@
   .menu_cards{
     display: flex;
     flex-direction: column;
+    transform: translateY(0px);
+    
 
     &_entry{
       max-width: 100%;
@@ -118,7 +120,7 @@
   .menu_cards{
     display: flex;
     width: 100%;
-    transition: translateY(100px);
+    transform: translateY(100px);
 
     @media (min-width:768px) {
       width: 50%;
