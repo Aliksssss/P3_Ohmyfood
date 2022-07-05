@@ -1,5 +1,11 @@
 .restaurant{
     background-color: #f6f6f6;
+
+    &_title{
+      font-size: 1.7rem;
+      padding: 1rem 0 0 1rem;
+
+    }
   
   
     .container{
@@ -70,7 +76,7 @@
         justify-content: space-between;
         align-items: center;
         color: black;
-        padding: 0 1rem 1rem 1rem ;
+        padding: 1rem 1rem 1rem 1rem ;
        
         
   

@@ -96,7 +96,7 @@
   text-align: center;
   padding: 0.7rem 2.5rem;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: none;
   border-radius: 40px;
   cursor: pointer;
@@ -131,7 +131,7 @@
 }
 
 .function_contain_title {
-  font-size: 30px;
+  font-size: 1.7rem;
   margin: 0;
   padding: 0.9rem;
 }
@@ -228,6 +228,11 @@
 
 .restaurant {
   background-color: #f6f6f6;
+}
+
+.restaurant_title {
+  font-size: 1.7rem;
+  padding: 1rem 0 0 1rem;
 }
 
 .restaurant .container {
@@ -328,7 +333,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: black;
-  padding: 0 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .restaurant .cards .card__title__txt {
@@ -367,7 +372,7 @@
 .footer__contain__logo {
   color: #ffffff;
   font-family: Shrikhand,"cursive";
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0 0 1rem 1rem;
 }
 
@@ -379,7 +384,7 @@
 
 .footer__list__shortlist {
   margin-top: 0;
-  padding: 0 0 12px 0;
+  padding: 0 0 0.7rem 0;
 }
 
 .footer__list__shortlist .footer-link {
@@ -505,7 +510,7 @@
   padding-bottom: 1rem;
   font-weight: 400;
   margin: 1rem 0;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .main_page .menu_cards_title::after {
@@ -607,6 +612,7 @@
 
 .main_page .menu_cards_text .menu_subtitle {
   margin: 1rem 0 -1.3rem 0;
+  padding: 0 0 1rem 0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -720,7 +726,7 @@
 .head_main_link {
   position: absolute;
   left: 20px;
-  top: 2rem;
+  top: 1.8rem;
   color: black;
   font-size: 2.2rem;
   text-decoration: none;
@@ -751,6 +757,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 2.5rem;
 }
 
 /* background header*/
