@@ -82,7 +82,7 @@
   text-align: center;
   padding: 0.7rem 2.5rem;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border: none;
   border-radius: 40px;
   cursor: pointer;
@@ -93,10 +93,10 @@
   transition: all;
   transition-duration: 0.25s;
   opacity: 1;
+
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     opacity: 0.7;
-    
   }  
     
 
@@ -118,7 +118,7 @@
   &_contain_title {
     font-size: 30px;
     margin: 0;
-    padding: 1.5rem;
+    padding: 0.9rem;
   }
 
   &_contain_list {

@@ -1,6 +1,6 @@
 .restaurant{
     background-color: #f6f6f6;
-    padding: 0.5rem 1rem;
+  
   
     .container{
       margin: auto;
@@ -22,7 +22,7 @@
 
       @media (min-width:768px){
         width: calc(50% - 2rem);
-        height: 350px;
+        height: 400px;
         
      }
 
@@ -39,14 +39,21 @@
       margin:0.5rem 0;
       box-shadow: .25rem .25rem .5rem gray;
       cursor: pointer;
-     
+
+      @media (min-width:768px){
+        height: 400px;;
+      }
   
       &__img{
         width: 100%;
-        height: 220px;
+        height: 150px;
         border-radius:1rem 1rem 0 0;
         box-shadow:none;
         object-fit: cover;
+
+        @media (min-width:768px){
+          height: 220px;
+        }
       }
   
       &__badge{
@@ -70,18 +77,17 @@
         &__txt{
           justify-content: left;
           margin: 0;
-          
         }
-  
-        &__name{
-          margin-top:0;
-         
   
         &__location{
           margin: 0;
         }
+
         }
-      }
+        .card__name{
+          margin-top:0;
+          font-size: 1.2rem;
+        }
       
       }
     }
