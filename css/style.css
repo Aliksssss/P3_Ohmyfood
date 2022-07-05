@@ -27,12 +27,13 @@
   text-align: center;
   padding: 10px;
   font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
   margin: 1rem 0;
 }
 
 .explore {
   background-color: whitesmoke;
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -131,9 +132,12 @@
 }
 
 .function_contain_title {
-  font-size: 1.7rem;
-  margin: 0;
+  font-size: 1.5rem;
   padding: 0.9rem;
+}
+
+.function .function_subtitle {
+  font-size: 1rem;
 }
 
 .function_contain_list {
@@ -231,8 +235,9 @@
 }
 
 .restaurant_title {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding: 1rem 0 0 1rem;
+  margin: 0;
 }
 
 .restaurant .container {
@@ -352,6 +357,10 @@
   font-size: 1.2rem;
 }
 
+.restaurant .cards .card .card_location {
+  font-size: 1rem;
+}
+
 .footer {
   background-color: #353535;
   display: block;
@@ -380,6 +389,7 @@
   list-style: none;
   padding: 0;
   margin: 1rem;
+  font-size: 1rem;
 }
 
 .footer__list__shortlist {
@@ -397,6 +407,10 @@
   margin-right: 2rem;
 }
 
+.head_main_logo {
+  font-size: 1.7rem;
+}
+
 .main_page {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
@@ -404,7 +418,6 @@
   position: relative;
   background: white;
   border-radius: 2rem 2rem 0 0;
-  padding: 1rem 2rem 0 2rem;
 }
 
 .main_page_head {
@@ -433,6 +446,7 @@
 .main_page_title {
   font-family: "Shrikhand", "cursive";
   margin: 1.2rem 0;
+  font-size: 1.5rem;
 }
 
 .main_page_heart {
@@ -616,12 +630,14 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 1.1rem;
 }
 
 .main_page .menu_cards_text .menu_description {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 1rem;
 }
 
 .main_page .menu_cards_price {
@@ -720,15 +736,14 @@
   width: 100%;
   height: 100%;
   font-family: "Shrikhand", cursive;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .head_main_link {
   position: absolute;
   left: 20px;
-  top: 1.8rem;
   color: black;
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-decoration: none;
   -webkit-box-align: center;
       -ms-flex-align: center;

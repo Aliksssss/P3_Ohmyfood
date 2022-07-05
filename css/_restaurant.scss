@@ -2,8 +2,9 @@
     background-color: #f6f6f6;
 
     &_title{
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       padding: 1rem 0 0 1rem;
+      margin: 0;
 
     }
   
@@ -93,6 +94,10 @@
         .card__name{
           margin-top:0;
           font-size: 1.2rem;
+        }
+
+        .card_location{
+          font-size: 1rem;
         }
       
       }
