@@ -30,7 +30,7 @@
 
 .explore {
   background-color: $cd-bgd;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -53,6 +53,7 @@
     height: 1.5rem;
     width: 180px;
     color: $cd-txt;
+    padding-left: 1rem;
   }
 
   &_icon {
@@ -64,11 +65,13 @@
 
   &_title {
     padding: 0 30px;
+    font-size: 1.5rem;
   }
   &_subtitle {
     padding: 0 20px;
     font-weight: lighter;
-    padding-bottom: 10px;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
   }
 
   &_light {
