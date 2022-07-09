@@ -2,6 +2,7 @@
   text-align: center;
   font-size: 1.1rem;
   padding: 1rem 0 1rem 0;
+
 }
 
 .head_title {
@@ -16,6 +17,12 @@
   font-family: "Shrikhand", cursive;
   margin: 1rem 0;
 
+  @media (max-width:2560px) {
+    margin: auto;
+    max-width: 1440px;
+    font-size: 2rem;
+  }
+
   &_title {
     align-items: center;
     justify-content: center;
@@ -25,6 +32,8 @@
     font-size: 1.5rem;
     margin: 1rem 0;
   }
+
+  
 }
 
 
@@ -35,12 +44,17 @@
   justify-content: center;
   align-items: center;
 
+ 
+
+
   .location {
     background-color: #f0f0f0;
     font-weight: 600;
     -webkit-box-shadow: inset 0px 10px 13px 1px rgba(0, 0, 0, 0.53);
     box-shadow: inset 0px 10px 8px -7px rgba(0, 0, 0, 0.53);
     padding: 1rem 1rem 1rem 2rem;
+
+    
   }
 
   .location input {
@@ -122,9 +136,10 @@
     font-size: 1.5rem;
     padding: 0.9rem;
 
-    @media (max-width:2580px) {
+    @media (max-width:2560px) {
       margin: auto;
       max-width: 1440px;
+   
       
     }
   }
@@ -149,7 +164,7 @@
       justify-content: center;
     }
 
-    @media (max-width:2580px) {
+    @media (max-width:2560px) {
       margin: auto;
       max-width: 1440px;
       

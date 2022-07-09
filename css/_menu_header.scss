@@ -85,12 +85,7 @@
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width:3480px) {
-      margin: auto;
-      width: 100%;
-      height: 100%;
-      
-    }
+    
   
     &__txt {
       height: 100%;
