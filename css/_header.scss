@@ -121,6 +121,12 @@
   &_contain_title {
     font-size: 1.5rem;
     padding: 0.9rem;
+
+    @media (max-width:2580px) {
+      margin: auto;
+      max-width: 1440px;
+      
+    }
   }
 
   .function_subtitle{
@@ -141,6 +147,12 @@
     @media (min-width: 768px) {
       flex-wrap: nowrap;
       justify-content: center;
+    }
+
+    @media (max-width:2580px) {
+      margin: auto;
+      max-width: 1440px;
+      
     }
   }
 
